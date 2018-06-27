@@ -17,23 +17,24 @@ export class Slides {
   slides = [
   {
     title: "Welcome to HoT Steps!",
-    description: "The <b>Ionic Component Documentation</b> showcases a number of useful components that are included out of the box with Ionic.",
-    image: "assets/img/logo.png",
+    description: "Our <b>Annual Competition</b> to kick start spring with some exercise.",
+    image: "assets/imgs/foot.png",
   },
   {
-    title: "What is Ionic?",
-    description: "<b>Ionic Framework</b> is an open source SDK that enables developers to build high quality mobile apps with web technologies like HTML, CSS, and JavaScript.",
-    image: "assets/img/logo.png",
+    title: "Teams",
+    description: "This is a <b>Team Competion</b> for teams of 4 participants to see who can take the most steps for the month of <b>September</b> and become the winners of the HoT Steps Trophy.",
+    image: "assets/imgs/foot.png",
   },
   {
-    title: "What is Ionic Cloud?",
-    description: "The <b>Ionic Cloud</b> is a cloud platform for managing and scaling Ionic apps with integrated services like push notifications, native builds, user auth, and live updating.",
-    image: "assets/img/logo.png",
+    title: "Rules",
+    description: "<ul> <li><b>Act with Integrity</b> - make sure you are accurate with your step counts </li> <li><b>Operate as One</b> - support your team and work together </li> <li><b>No Bullshit</b> - say no more!!! </li> </ul>",
+    image: "assets/imgs/foot.png",
   }
 ];
 
   constructor(public navCtrl: NavController) {
   }
+
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad Slides');
