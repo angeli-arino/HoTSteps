@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { Login } from '../login/login';
 
 /**
  * Generated class for the Slides page.
@@ -33,8 +34,13 @@ export class Slides {
 ];
 
   constructor(public navCtrl: NavController) {
+
+
   }
 
+  login() {
+    this.navCtrl.setRoot(Login);
+  }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad Slides');
