@@ -11,6 +11,7 @@ import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 import { Slides } from '../pages/slides/slides';
 import { Login } from '../pages/login/login';
+import { Signup } from '../pages/signup/signup';
 
 //Import Providers
 import { StatusBar } from '@ionic-native/status-bar';
@@ -42,7 +43,8 @@ export const firebaseConfig = {
     HomePage,
     TabsPage,
     Slides,
-    Login
+    Login,
+    Signup
   ],
   imports: [
     BrowserModule,
@@ -61,7 +63,7 @@ export const firebaseConfig = {
     TabsPage,
     Slides,
     Login,
-
+    Signup
   ],
   providers: [
     StatusBar,

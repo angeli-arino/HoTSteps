@@ -5,6 +5,9 @@ import { NavController } from 'ionic-angular';
 import { TabsPage } from '../tabs/tabs';
 import { AuthService } from '../../services/auth.service';
 
+//Pages
+import { Signup } from '../signup/signup';
+
 @IonicPage()
 @Component({
   selector: 'page-login',
@@ -42,5 +45,9 @@ export class Login {
 				error => this.loginError = error.message
 			);
 	}
+
+  signup(){
+    this.navCtrl.push(Signup);
+  }
 
 }
