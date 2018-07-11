@@ -1,0 +1,37 @@
+<!--
+  Generated template for the Resetpass page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+	<ion-navbar>
+		<ion-title>Forgot Password</ion-title>
+	</ion-navbar>
+</ion-header>
+
+
+<ion-content>
+
+  <form (ngSubmit)="reset()" [formGroup]="form">
+    <ion-list inset>
+
+			<ion-item [ngClass]="{ invalid: emailErrors.hasError('*', ['touched']) }">
+				<ion-input type="text" placeholder="Email" formControlName="email"></ion-input>
+			</ion-item>
+
+			<div ngxErrors="email" #emailErrors="ngxErrors">
+				<div [ngxError]="['email', 'required']" [when]="['touched']">It should be a valid email</div>
+			</div>
+
+    </ion-list>
+
+				<div padding-horizontal>
+					<div class="form-error">{{reseError}}</div>
+					<button ion-button full type="submit" [disabled]="!form.valid">
+						<ion-icon name="send"></ion-icon>
+						Reset Password
+					</button>
+				</div>
+	</form>
+</ion-content>

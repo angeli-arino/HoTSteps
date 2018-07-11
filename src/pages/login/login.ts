@@ -7,6 +7,7 @@ import { AuthService } from '../../services/auth.service';
 
 //Pages
 import { Signup } from '../signup/signup';
+import { Resetpass } from '../resetpass/resetpass';
 
 @IonicPage()
 @Component({
@@ -48,6 +49,10 @@ export class Login {
 
   signup(){
     this.navCtrl.push(Signup);
+  }
+
+  resetPass(){
+    this.navCtrl.push(Resetpass);
   }
 
 }
